@@ -1,0 +1,11 @@
+import { startProgram, stopProgram } from "../utils/Record.js";
+startProgram();
+const HelloWorld = require("../components/HelloWorld.js");
+const person = new HelloWorld("weicong", 25);
+person.sayName();
+person.sayAge();
+person.reset();
+document.getElementsByClassName("pText")[0].innerHTML = "dfg";
+const txt = require("../../public/helloworld.txt");
+console.log(txt);
+stopProgram();
